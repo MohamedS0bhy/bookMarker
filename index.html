@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WebSites BookMarker</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="./assets/css/style.css"  rel="stylesheet">
+  </head>
+  <body onload="fetchBookmarks()">
+    <div class="container">
+      <div class="header clearFix">
+        <nav></nav>
+        <h3 class="text-muted">BookMarker</h3>
+      </div>
+      <div class="jumbotron">
+        <h2>BookMark Your Favorite Sites</h2>
+        <form id="siteForm">
+
+          <div class="form-group">
+            <label>Site Name </label>
+            <input type="text" class="form-control" id="siteName" placeholder="Site Name">
+          </div>
+
+          <div class="form-group">
+            <label>Site URL </label>
+            <input type="text" class="form-control" id="siteURL" placeholder="Site URL">
+          </div>
+
+          <button type="submit" class="btn btn-primary">bookMark</button>
+        </form>
+      </div>
+
+      <div class="row marketing" id="bookmarkResults">
+
+      </div>
+
+      <div class="footer">
+        <p>BookMarker JS App </p>
+      </div>
+
+    </div>
+    <script src="./assets/js/jquery-3.1.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bookmarker.js"></script>
+  </body>
+</html>
